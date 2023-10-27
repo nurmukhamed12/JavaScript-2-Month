@@ -25,11 +25,11 @@ class Element {
   
       document.body.appendChild(button);
   
-      button.addEventListener('click', function() {
+      button.addEventListener('click', () => {
         this.changeBgColor(this.generateRandomColor());
         this.changeBorderRadius(this.generateRandomBorderRadius());
-      });
-    }
+    });
+}
   
     generateRandomColor() {
       return '#' + Math.floor(Math.random() * 16777215).toString(16);
